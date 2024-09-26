@@ -15,43 +15,7 @@ namespace Szepsegek
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public class Vendeg
-    {
-        public int VendegId { get; set; }
-        public string VezetekNev { get; set; }
-        public string KeresztNev { get; set; }
-        public int Telefon { get; set; }
-        public string Email { get; set; }
-        public int Pontok { get; set; }
-    }
-
-    public class Dolgozo
-    {
-        public int DolgozoId { get; set; }
-        public string VezetekNev { get; set; }
-        public string KeresztNev { get; set; }
-        public int SzolgaltatasId { get; set; }
-        public int Telefon { get; set; }
-        public string Email { get; set; }
-    }
-
-    public class Szolgaltatas
-    {
-        public int SzolgaltatasId { get; set; }
-        public string Kategoria { get; set; }
-        public int Idotartam { get; set; }
-        public int Ar { get; set; }
-    }
-
-    public class Foglalas
-    {
-        public int FoglalasId { get; set; }
-        public int SzolgaltatasId { get; set; }
-        public int DolgozoId { get; set; }
-        public int VendegId { get; set; }
-        public DateTime KezdesIdopont { get; set; }
-        public DateTime BefejezesIdopont { get; set; }
-    }
+    
     public class DataService
     {
         private string connectionString = "Server=localhost;Database=adatbazisnev;User ID=felhasznalonev;Password=jelszo;";
@@ -169,9 +133,8 @@ namespace Szepsegek
                     };
                     foglalasok.Add(foglalas);
                 }
+                return foglalasok;
             }
-
-            return foglalasok;
         }
     }
 
