@@ -8,7 +8,17 @@ namespace Szepsegek
 {
 	public class Dolgozo
 	{
-		public int DolgozoId { get; set; }
+        public Dolgozo(int dolgozoId, string vezetekNev, string keresztNev, int szolgaltatasId, int telefon, string email)
+        {
+            DolgozoId = dolgozoId;
+            VezetekNev = vezetekNev;
+            KeresztNev = keresztNev;
+            SzolgaltatasId = szolgaltatasId;
+            Telefon = telefon;
+            Email = email;
+        }
+
+        public int DolgozoId { get; set; }
 		public string VezetekNev { get; set; }
 		public string KeresztNev { get; set; }
 		public int SzolgaltatasId { get; set; }

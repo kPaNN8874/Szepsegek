@@ -8,7 +8,15 @@ namespace Szepsegek
 {
 	public class Szolgaltatas
 	{
-		public int SzolgaltatasId { get; set; }
+        public Szolgaltatas(int szolgaltatasId, string kategoria, int idotartam, int ar)
+        {
+            SzolgaltatasId = szolgaltatasId;
+            Kategoria = kategoria;
+            Idotartam = idotartam;
+            Ar = ar;
+        }
+
+        public int SzolgaltatasId { get; set; }
 		public string Kategoria { get; set; }
 		public int Idotartam { get; set; }
 		public int Ar { get; set; }
