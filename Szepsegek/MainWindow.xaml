@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Szepsegek"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="900" Width="600">
     <Grid>
-        <DataGrid x:Name="dataGridVendegek" AutoGenerateColumns="True" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition />
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Szolgáltatás"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="30"/>
+        
+        <Label Content="Dolgozó"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="30"
+               Grid.Row="1"/>
+        
+        <Label Content="Időpont"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="30"
+               Grid.Row="2"/>
+
+        <ComboBox Grid.Column="1"
+                  Grid.Row="0"
+                  Grid.ColumnSpan="2"
+                  Margin="30"
+                  Width="300"
+                  Height="70">
+            <ComboBoxItem></ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Grid.Column="1"
+                  Grid.Row="1"
+                  Grid.ColumnSpan="2"
+                  Margin="30"
+                  Width="300"
+                  Height="70">
+            <ComboBoxItem></ComboBoxItem>
+        </ComboBox>
+
+        
+
+        <Button Grid.Row="3"
+                Grid.ColumnSpan="3"
+                Margin="20"
+                Content="Rögzít"
+                FontSize="30"/>
     </Grid>
 </Window>
