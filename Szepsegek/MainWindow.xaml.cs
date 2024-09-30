@@ -1,24 +1,13 @@
 ﻿using MySql.Data.MySqlClient;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
 namespace Szepsegek
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    
+
     public class DataService
     {
-        private string connectionString = "Server=localhost;Database=adatbazisnev;User ID=felhasznalonev;Password=jelszo;";
+        private string connectionString = "Server=localhost;Database=szepsegek;User ID=admin;Password=;";
 
         // Vendégek lekérdezése a Vendeg táblából
         public List<Vendeg> GetVendegek()
@@ -64,7 +53,7 @@ namespace Szepsegek
 
                 while (reader.Read())
                 {
-                    Dolgozo dolgozo = new Dolgozo
+                    Dolgozo dolgozo = new Dolgozo()
                     {
                         DolgozoId = reader.GetInt32("dolgozo_id"),
                         VezetekNev = reader.GetString("dolgozo_v_nev"),
@@ -94,7 +83,7 @@ namespace Szepsegek
 
                 while (reader.Read())
                 {
-                    Szolgaltatas szolgaltatas = new Szolgaltatas
+                    Szolgaltatas szolgaltatas = new Szolgaltatas(1,"klet",12,1)
                     {
                         SzolgaltatasId = reader.GetInt32("szolgaltatas_id"),
                         Kategoria = reader.GetString("szolgaltatas_kategoria"),
