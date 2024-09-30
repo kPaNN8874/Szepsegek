@@ -53,7 +53,7 @@ namespace Szepsegek
 
                 while (reader.Read())
                 {
-                    Dolgozo dolgozo = new Dolgozo()
+                    Dolgozo dolgozo = new Dolgozo
                     {
                         DolgozoId = reader.GetInt32("dolgozo_id"),
                         VezetekNev = reader.GetString("dolgozo_v_nev"),
