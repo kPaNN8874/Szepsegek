@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Szepsegek"
         mc:Ignorable="d"
-        Title="MainWindow" Height="900" Width="600">
+        Title="MainWindow" Height="700" Width="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -20,19 +20,22 @@
         </Grid.RowDefinitions>
 
         <Label Content="Szolgáltatás"
-               HorizontalAlignment="Center"
+               HorizontalAlignment="Left"
                VerticalAlignment="Center"
+               Margin="20 0 0 0"
                FontSize="30"/>
         
         <Label Content="Dolgozó"
-               HorizontalAlignment="Center"
+               HorizontalAlignment="left"
                VerticalAlignment="Center"
+               Margin="20 0 0 0"
                FontSize="30"
                Grid.Row="1"/>
         
         <Label Content="Időpont"
-               HorizontalAlignment="Center"
+               HorizontalAlignment="Left"
                VerticalAlignment="Center"
+               Margin="20 0 0 0"
                FontSize="30"
                Grid.Row="2"/>
 
@@ -41,8 +44,22 @@
                   Grid.ColumnSpan="2"
                   Margin="30"
                   Width="300"
-                  Height="70">
-            <ComboBoxItem></ComboBoxItem>
+                  Height="70"
+                  VerticalContentAlignment="Center"
+                  HorizontalContentAlignment="Center"
+                  FontSize="20">
+            <ComboBoxItem Content="Kozmetika"
+                          VerticalContentAlignment="Center"
+                          HorizontalContentAlignment="Center"
+                          FontSize="20"/>
+            <ComboBoxItem Content="Műkörömépítés"
+                          VerticalContentAlignment="Center"
+                          HorizontalContentAlignment="Center"
+                          FontSize="20"/>
+            <ComboBoxItem Content="Szempillaépítés"
+                          VerticalContentAlignment="Center"
+                          HorizontalContentAlignment="Center"
+                          FontSize="20"/>
         </ComboBox>
 
         <ComboBox Grid.Column="1"
@@ -50,11 +67,33 @@
                   Grid.ColumnSpan="2"
                   Margin="30"
                   Width="300"
-                  Height="70">
-            <ComboBoxItem></ComboBoxItem>
+                  Height="70"
+                  VerticalContentAlignment="Center"
+                  HorizontalContentAlignment="Center"
+                  FontSize="20">
+            <ComboBoxItem Content="Dolgozó1"
+                          VerticalContentAlignment="Center"
+                          HorizontalContentAlignment="Center"
+                          FontSize="20"/>
+            <ComboBoxItem Content="Dolgozó2"
+                          VerticalContentAlignment="Center"
+                          HorizontalContentAlignment="Center"
+                          FontSize="20"/>
+            <ComboBoxItem Content="Dolgozó3"
+                          VerticalContentAlignment="Center"
+                          HorizontalContentAlignment="Center"
+                          FontSize="20"/>
+
+
         </ComboBox>
 
+        <DatePicker Grid.Column="1"
+                    Grid.Row="2"
+                    FontSize="20"/>
         
+        
+
+
 
         <Button Grid.Row="3"
                 Grid.ColumnSpan="3"
