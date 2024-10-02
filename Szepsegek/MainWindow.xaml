@@ -8,38 +8,27 @@
         Title="MainWindow" Height="700" Width="600">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition />
-            <RowDefinition Height="100"/>
-        </Grid.RowDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition />
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
 
-        <Label Content="Szolgáltatás"
+                <Label Content="Szolgáltatás"
                HorizontalAlignment="Left"
                VerticalAlignment="Center"
                Margin="20 0 0 0"
                FontSize="30"/>
-        
-        <Label Content="Dolgozó"
-               HorizontalAlignment="left"
-               VerticalAlignment="Center"
-               Margin="20 0 0 0"
-               FontSize="30"
-               Grid.Row="1"/>
-        
-        <Label Content="Időpont"
-               HorizontalAlignment="Left"
-               VerticalAlignment="Center"
-               Margin="20 0 0 0"
-               FontSize="30"
-               Grid.Row="2"/>
 
-        <ComboBox Grid.Column="1"
+                <ComboBox x:Name="SzolgaltatasokComboBox"
+                  ItemsSource="{Binding Szolgaltatasok}"
+                  DisplayMemberPath="Kategoria"
+                  Grid.Column="1"
                   Grid.Row="0"
                   Grid.ColumnSpan="2"
                   Margin="30"
@@ -47,22 +36,20 @@
                   Height="70"
                   VerticalContentAlignment="Center"
                   HorizontalContentAlignment="Center"
-                  FontSize="20">
-            <ComboBoxItem Content="Kozmetika"
-                          VerticalContentAlignment="Center"
-                          HorizontalContentAlignment="Center"
-                          FontSize="20"/>
-            <ComboBoxItem Content="Műkörömépítés"
-                          VerticalContentAlignment="Center"
-                          HorizontalContentAlignment="Center"
-                          FontSize="20"/>
-            <ComboBoxItem Content="Szempillaépítés"
-                          VerticalContentAlignment="Center"
-                          HorizontalContentAlignment="Center"
-                          FontSize="20"/>
-        </ComboBox>
+                  FontSize="20"/>
 
-        <ComboBox Grid.Column="1"
+
+                <Label Content="Dolgozó"
+               HorizontalAlignment="left"
+               VerticalAlignment="Center"
+               Margin="20 0 0 0"
+               FontSize="30"
+               Grid.Row="1"/>
+
+                <ComboBox x:Name="DolgozokComboBox"
+                  ItemsSource="{Binding Dolgozok}"
+                  DisplayMemberPath="Nev"
+                  Grid.Column="1"
                   Grid.Row="1"
                   Grid.ColumnSpan="2"
                   Margin="30"
@@ -70,35 +57,27 @@
                   Height="70"
                   VerticalContentAlignment="Center"
                   HorizontalContentAlignment="Center"
-                  FontSize="20">
-            <ComboBoxItem Content="Dolgozó1"
-                          VerticalContentAlignment="Center"
-                          HorizontalContentAlignment="Center"
-                          FontSize="20"/>
-            <ComboBoxItem Content="Dolgozó2"
-                          VerticalContentAlignment="Center"
-                          HorizontalContentAlignment="Center"
-                          FontSize="20"/>
-            <ComboBoxItem Content="Dolgozó3"
-                          VerticalContentAlignment="Center"
-                          HorizontalContentAlignment="Center"
-                          FontSize="20"/>
+                  FontSize="20"/>
 
 
-        </ComboBox>
+                <Label Content="Időpont"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               Margin="20 0 0 0"
+               FontSize="30"
+               Grid.Row="2"/>
 
-        <DatePicker Grid.Column="1"
+                <DatePicker Grid.Column="1"
                     Grid.Row="2"
                     FontSize="20"/>
-        
-        
 
-
-
-        <Button Grid.Row="3"
+                <Button Grid.Row="3"
                 Grid.ColumnSpan="3"
                 Margin="20"
                 Content="Rögzít"
                 FontSize="30"/>
+            
+        
+
     </Grid>
 </Window>

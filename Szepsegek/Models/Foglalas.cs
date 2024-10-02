@@ -9,14 +9,14 @@ namespace Szepsegek
 {
 	public class Foglalas
 	{
-        public Foglalas(int foglalasId, int szolgaltatasId, int dolgozoId, int vendegId, DateTime kezdesIdopont, DateTime befejezesIdopont)
+        public Foglalas(MySqlDataReader reader)
         {
-            FoglalasId = foglalasId;
-            SzolgaltatasId = szolgaltatasId;
-            DolgozoId = dolgozoId;
-            VendegId = vendegId;
-            KezdesIdopont = kezdesIdopont;
-            BefejezesIdopont = befejezesIdopont;
+            FoglalasId = reader.GetInt32("foglalas_id");
+            SzolgaltatasId = reader.GetInt32("szolgaltatas_id");
+            DolgozoId = reader.GetInt32("dolgozo_id");
+            VendegId = reader.GetInt32("vendeg_id");
+            KezdesIdopont = reader.GetDateTime("foglalas_kezdes_idop");
+            BefejezesIdopont = reader.GetDateTime("foglalas_befejezes_idop");
         }
 
         public int FoglalasId { get; set; }
