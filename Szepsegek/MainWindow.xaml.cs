@@ -43,6 +43,31 @@ namespace Szepsegek
                 new Dolgozo(1,"Asd", "Ibolya", 2, "36704562387", "asd.Ibolyka@gmail.com")
                 ];
         }
+
+        private void HomePage_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Szolgaltatasok_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Dolgozoink_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Szalon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void IdopontFoglalas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
 }

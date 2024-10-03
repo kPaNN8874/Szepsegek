@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Szepsegek"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="600">
+        Title="Home" Height="600" Width="1000" Background="#f3f0fa">
     <Grid>
-        <Grid.ColumnDefinitions>
+        
+        <!--<Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -71,13 +72,62 @@
                     Grid.Row="2"
                     FontSize="20"/>
 
-                <Button Grid.Row="3"
+        <Button Grid.Row="3"
                 Grid.ColumnSpan="3"
                 Margin="20"
                 Content="Rögzít"
-                FontSize="30"/>
-            
-        
+                FontSize="30"/>-->
+        <Grid Background="#e6e0f5" Width="200" HorizontalAlignment="Left">
+            <StackPanel Margin="10,50,10,10">
+                <Button Content="Home Page" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16" Click="HomePage_Click"/>
+                <Button Content="Szolgáltatások" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16" Click="Szolgaltatasok_Click"/>
+                <Button Content="Dolgozóink" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16" Click="Dolgozoink_Click"/>
+                <Button Content="Szalon" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16" Click="Szalon_Click"/>
+                <Button Content="Időpont Foglalás" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16" Click="IdopontFoglalas_Click"/>
+            </StackPanel>
+        </Grid>
 
+        <!-- Main Content -->
+        <Grid Margin="200,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Top Bar -->
+            <StackPanel Orientation="Horizontal" Background="#ffe5f0" Height="60">
+                <TextBlock Text="Home" FontSize="36" VerticalAlignment="Center" Margin="20,0,0,0" />
+                <TextBox Width="300" Margin="100,15,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                         Text="Hinted search text" />
+                <Button Content="Bejelentkezés/Regisztráció" Width="150" Height="30" Margin="20,15,10,0" HorizontalAlignment="Right" Click="Szolgaltatasok_Click" />
+            </StackPanel>
+
+            <!-- Cards Section -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Margin="50">
+                <Border BorderThickness="1" BorderBrush="Gray" Width="200" Height="150" CornerRadius="10" Margin="10">
+                    <StackPanel>
+                        <TextBlock Text="Dolgozóink" FontSize="20" HorizontalAlignment="Center" Margin="0,10"/>
+                        <TextBlock Text="Dolgozó leírása rövide, adott oldal leírása rövide." FontSize="12" TextWrapping="Wrap" 
+                                   HorizontalAlignment="Center" Margin="10"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderThickness="1" BorderBrush="Gray" Width="200" Height="150" CornerRadius="10" Margin="10">
+                    <StackPanel>
+                        <TextBlock Text="Időpont Foglalás" FontSize="20" HorizontalAlignment="Center" Margin="0,10"/>
+                        <TextBlock Text="Foglalás leírása rövide, adott oldal leírása rövide." FontSize="12" TextWrapping="Wrap" 
+                                   HorizontalAlignment="Center" Margin="10"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderThickness="1" BorderBrush="Gray" Width="200" Height="150" CornerRadius="10" Margin="10">
+                    <StackPanel>
+                        <TextBlock Text="Szalón Info" FontSize="20" HorizontalAlignment="Center" Margin="0,10"/>
+                        <TextBlock Text="Szalón leírása rövide, adott oldal leírása rövide." FontSize="12" TextWrapping="Wrap" 
+                                   HorizontalAlignment="Center" Margin="10"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
