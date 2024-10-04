@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Szepsegek.Pages
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for RegisztracioPage.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class RegisztracioPage : Page
     {
-        public Page1()
+        public RegisztracioPage()
         {
             InitializeComponent();
         }

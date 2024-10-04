@@ -1,0 +1,68 @@
+﻿<Page x:Class="Szepsegek.Pages.FoglalasPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Szepsegek.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FoglalasPage">
+
+    <Grid>
+        <!-- Sidebar -->
+        <Grid Background="#e6e0f5" Width="200" HorizontalAlignment="Left">
+            <StackPanel Margin="10,50,10,10">
+                <Button Content="Home Page" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
+                <Button Content="Szolgáltatások" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
+                <Button Content="Dolgozóink" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
+                <Button Content="Szalón" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
+                <Button Content="Időpont Foglalás" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Main Content -->
+        <Grid Margin="200,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Top Bar -->
+            <StackPanel Orientation="Horizontal" Background="#ffe5f0" Height="60">
+                <TextBlock Text="Időpont Foglalás" FontSize="36" VerticalAlignment="Center" Margin="20,0,0,0" />
+                <TextBox Width="300" Margin="100,15,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Button Content="Bejelentkezés/Regisztráció" Width="150" Height="30" Margin="20,15,10,0" HorizontalAlignment="Right" />
+            </StackPanel>
+
+            <!-- Booking Section -->
+            <StackPanel Grid.Row="1" Margin="20" Orientation="Horizontal">
+                <!-- Employee List -->
+                <StackPanel Width="300" Margin="0,0,20,0">
+                    <TextBlock Text="Dolgozók" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" />
+                    <ListBox>
+                        <ListBoxItem Content="Dolgozó 1 - Szolgáltatás1" />
+                        <ListBoxItem Content="Dolgozó 2 - Szolgáltatás2" />
+                        <ListBoxItem Content="Dolgozó 3 - Szolgáltatás3" />
+                    </ListBox>
+                </StackPanel>
+
+                <!-- Date Picker and Time Picker -->
+                <StackPanel Width="400" Margin="0,0,0,0">
+                    <TextBlock Text="Dátum" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <DatePicker SelectedDate="2023-08-17" />
+
+                    <TextBlock Text="Időpont" FontSize="20" FontWeight="Bold" Margin="20,20,0,10"/>
+                    <ComboBox Width="100">
+                        <ComboBoxItem Content="08:00" />
+                        <ComboBoxItem Content="09:00" />
+                        <ComboBoxItem Content="10:00" />
+                        <!-- Add more time slots as needed -->
+                    </ComboBox>
+
+                    <!-- Confirm Button -->
+                    <Button Content="Confirm" Width="100" Height="30" Margin="20,20,0,0"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
