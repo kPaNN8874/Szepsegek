@@ -24,5 +24,7 @@ namespace Szepsegek.Pages
         {
             InitializeComponent();
         }
+
+      
     }
 }

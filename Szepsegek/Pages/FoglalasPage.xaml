@@ -21,14 +21,12 @@
             <!-- Top Bar -->
             <StackPanel Orientation="Horizontal" Background="#ffe5f0" Height="60">
                 <TextBlock Text="Időpont Foglalás" FontSize="36" VerticalAlignment="Center" Margin="20,0,0,0" />
-                <TextBox Width="300" Margin="100,15,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
-                <Button Content="Bejelentkezés/Regisztráció" Width="150" Height="30" Margin="20,15,10,0" HorizontalAlignment="Right" />
             </StackPanel>
 
             <!-- Booking Section -->
             <StackPanel Grid.Row="1" Margin="20" Orientation="Horizontal">
                 <!-- Employee List -->
-                <StackPanel Width="300" Margin="0,0,20,0">
+                <StackPanel Width="200" Margin="0,0,20,0">
                     <TextBlock Text="Dolgozók" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" />
                     <ListBox>
                         <ListBoxItem Content="Dolgozó 1 - Szolgáltatás1" />
@@ -40,7 +38,7 @@
                 <!-- Date Picker and Time Picker -->
                 <StackPanel Width="400" Margin="0,0,0,0">
                     <TextBlock Text="Dátum" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
-                    <DatePicker SelectedDate="2023-08-17" />
+                    <DatePicker SelectedDate="2023-08-17" Width="268" />
 
                     <TextBlock Text="Időpont" FontSize="20" FontWeight="Bold" Margin="20,20,0,10"/>
                     <ComboBox Width="100">
