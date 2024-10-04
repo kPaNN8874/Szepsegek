@@ -15,6 +15,7 @@
                 <Button Content="Dolgozóink" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16" Click="Dolgozoink_Click"/>
                 <Button Content="Szalon" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16" Click="Szalon_Click"/>
                 <Button Content="Időpont Foglalás" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16" Click="IdopontFoglalas_Click"/>
+                <Button Content="Bejelentkezés" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16" Click="Bejelentkezes_Click"/>
             </StackPanel>
         </Grid>
 
