@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Szepsegek
 {
-	public class Foglalas
+	public class Foglalas 
 	{
         public Foglalas(MySqlDataReader reader)
         {

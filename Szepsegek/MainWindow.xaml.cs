@@ -1,6 +1,9 @@
 ﻿using MySql.Data.MySqlClient;
 using System.Collections.ObjectModel;
+using System.Numerics;
 using System.Windows;
+using System.Windows.Navigation;
+using Szepsegek.Pages;
 using Szepsegek.Services;
 namespace Szepsegek
 {
@@ -46,7 +49,7 @@ namespace Szepsegek
 
         private void HomePage_Click(object sender, RoutedEventArgs e)
         {
-
+           
         }
 
         private void Szolgaltatasok_Click(object sender, RoutedEventArgs e)
@@ -61,11 +64,12 @@ namespace Szepsegek
 
         private void Szalon_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void IdopontFoglalas_Click(object sender, RoutedEventArgs e)
         {
+            
 
         }
     }
