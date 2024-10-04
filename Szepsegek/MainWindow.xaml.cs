@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Numerics;
 using System.Windows;
 using System.Windows.Navigation;
+using Szepsegek.Pages;
 using Szepsegek.Services;
 namespace Szepsegek
 {
@@ -68,7 +69,7 @@ namespace Szepsegek
 
         private void IdopontFoglalas_Click(object sender, RoutedEventArgs e)
         {
-            
+            Main.Content = new FoglalasPage();
 
         }
     }

@@ -10,15 +10,6 @@
 
     <Grid>
         <!-- Sidebar -->
-        <Grid Background="#e6e0f5" Width="200" HorizontalAlignment="Left">
-            <StackPanel Margin="10,50,10,10">
-                <Button Content="Home Page" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
-                <Button Content="Szolgáltatások" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
-                <Button Content="Dolgozóink" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
-                <Button Content="Szalón" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
-                <Button Content="Időpont Foglalás" HorizontalAlignment="Left" Padding="10,5" Background="Transparent" BorderBrush="Transparent" FontSize="16"/>
-            </StackPanel>
-        </Grid>
 
         <!-- Main Content -->
         <Grid Margin="200,0,0,0">
