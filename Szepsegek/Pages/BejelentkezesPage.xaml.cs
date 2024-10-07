@@ -24,20 +24,18 @@ namespace Szepsegek.Pages
         {
             InitializeComponent();
         }
-
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
             string email = emailTextBox.Text;
             string password = passwordBox.Password;
 
-            // Basic sign-in logic placeholder
-            if (email == "test@example.com" && password == "password")
+            // Placeholder login logic
+            if (email == "user@example.com" && password == "password")
             {
-                MessageBox.Show("Sign in successful!");
-                // Navigate to the main window or dashboard
+                MessageBox.Show("Login successful!");
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
-                this.Close();
+                
             }
             else
             {

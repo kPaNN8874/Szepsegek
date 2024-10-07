@@ -72,6 +72,11 @@ namespace Szepsegek
             Main.Content = new FoglalasPage();
 
         }
+
+        private void Bejelentkezes_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new BejelentkezesPage();
+        }
     }
 
 }
