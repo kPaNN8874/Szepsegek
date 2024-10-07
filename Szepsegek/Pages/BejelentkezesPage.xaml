@@ -25,7 +25,6 @@
 
             <!-- Forgot Password Link -->
             <TextBlock Text="Forgot password?" FontSize="12" Foreground="Blue" HorizontalAlignment="Center" Margin="0,10,0,0" Cursor="Hand"/>
-        </StackPanel>
     </Grid>
 
 </Page>
