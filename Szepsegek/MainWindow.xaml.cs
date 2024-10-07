@@ -54,7 +54,7 @@ namespace Szepsegek
 
         private void Szolgaltatasok_Click(object sender, RoutedEventArgs e)
         {
-
+            Main.Content = new SzolgáltatásokPage();
         }
 
         private void Dolgozoink_Click(object sender, RoutedEventArgs e)
@@ -64,7 +64,7 @@ namespace Szepsegek
 
         private void Szalon_Click(object sender, RoutedEventArgs e)
         {
-            
+            Main.Content = new SzalonInfoPage();
         }
 
         private void IdopontFoglalas_Click(object sender, RoutedEventArgs e)

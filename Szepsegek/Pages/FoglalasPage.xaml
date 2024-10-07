@@ -40,7 +40,7 @@
                     <TextBlock Text="Dátum" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
                     <DatePicker SelectedDate="2023-08-17" Width="268" />
 
-                    <TextBlock Text="Időpont" FontSize="20" FontWeight="Bold" Margin="20,20,0,10"/>
+                    <TextBlock Text="Időpont" FontSize="20" FontWeight="Bold" Margin="0,20,0,10"/>
                     <ComboBox Width="100">
                         <ComboBoxItem Content="08:00" />
                         <ComboBoxItem Content="09:00" />
