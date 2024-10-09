@@ -59,7 +59,7 @@ namespace Szepsegek
 
         private void Dolgozoink_Click(object sender, RoutedEventArgs e)
         {
-
+            Main.Content = new DolgozoinkPage();
         }
 
         private void Szalon_Click(object sender, RoutedEventArgs e)
