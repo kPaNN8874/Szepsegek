@@ -24,8 +24,8 @@ namespace Szepsegek
         public MainWindow()
         {
             _dataService = new DataService();
-            Szolgaltatasok = new ObservableCollection<Szolgaltatas>(Szolgaltatas());
-            Dolgozok = new ObservableCollection<Dolgozo>(Dolgozo());
+            Szolgaltatasok = new ObservableCollection<Szolgaltatas>();
+            Dolgozok = new ObservableCollection<Dolgozo>();
             Vendegek = new ObservableCollection<Vendeg>();
             Foglalasok = new ObservableCollection<Foglalas>();
             this.DataContext = _dataService;

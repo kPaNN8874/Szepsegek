@@ -31,14 +31,15 @@
                 <Border Margin="0,0,0,20" BorderBrush="LightGray" BorderThickness="1" CornerRadius="8">
                     <StackPanel>
                         <TextBlock Text="Műköröm Építés" FontSize="18" FontWeight="Bold" />
-                        <Image Source="nail_service_image.jfif" Height="100" Width="200" Margin="350,0,0,15" Stretch="UniformToFill" />
+                        <Image Source="pictures/nail_service_image.jpg" Height="100" Width="200" Margin="350,0,0,15" Stretch="UniformToFill" />
                     </StackPanel>
                 </Border>
 
                 <!-- Service 2 -->
-                <Border Margin="0,0,0,20" BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Height="111">
-                    <StackPanel Margin="0,0,0,-57">
+                <Border Margin="0,0,0,20" BorderBrush="LightGray" BorderThickness="1" CornerRadius="8" Height="157">
+                    <StackPanel Margin="0,0,0,0 ">
                         <TextBlock Text="Műszempilla Építés" FontSize="18" FontWeight="Bold" />
+                        <Image Source="pictures/eyelash_service_image.jpg" Height="127" Width="200" Margin="350 0 0 15" Stretch="UniformToFill" />
                     </StackPanel>
                 </Border>
             </StackPanel>
