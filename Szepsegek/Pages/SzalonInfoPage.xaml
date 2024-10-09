@@ -12,7 +12,7 @@
         <!-- Main Layout -->
         <Grid Margin="200,0,0,0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
