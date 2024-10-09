@@ -30,7 +30,7 @@ namespace Szepsegek.Pages
             string password = passwordBox.Password;
 
             // Placeholder login logic
-            if (email == "user@example.com" && password == "password")
+            if (email == "admin" && password == "admin")
             {
                 MessageBox.Show("Login successful!");
                 BejelentkezettPage mainWindow = new BejelentkezettPage();
