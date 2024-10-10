@@ -8,9 +8,9 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BejelentkezettPage">
 
-    <Grid>
+    <Grid Margin="200 0 0 0">
         <!-- Main Layout -->
-        <Grid Margin="160,0,0,0">
+        <Grid Margin="0,0,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="*"/>
@@ -23,13 +23,16 @@
 
             <!-- Main Content: Appointments and Personal Information -->
             <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
 
                 <!-- Appointments Section -->
-                <StackPanel Grid.Column="0" Margin="20">
+                <StackPanel Grid.Column="0" Margin="20,20,20,20">
                     <TextBlock Text="Foglalásai" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
                     <ListBox Width="400" Height="300">
                         <!-- Sample list items -->
@@ -41,7 +44,7 @@
                 </StackPanel>
 
                 <!-- Personal Info Section -->
-                <StackPanel Grid.Column="1" Margin="20">
+                <StackPanel Grid.Column="1" Margin="20,20,20,20">
                     <TextBlock Text="Személyes adatok" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
                     <TextBlock Text="Név: XY" FontSize="14" Margin="0,5"/>
                     <TextBlock Text="Email cím: xyz@gmail.com" FontSize="14" Margin="0,5"/>
