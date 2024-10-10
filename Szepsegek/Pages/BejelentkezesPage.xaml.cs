@@ -33,9 +33,10 @@ namespace Szepsegek.Pages
             if (email == "admin" && password == "admin")
             {
                 MessageBox.Show("Login successful!");
-                BejelentkezettPage mainWindow = new BejelentkezettPage();
-                mainWindow.Content = new BejelentkezettPage();
-                
+                //BejelentkezettPage mainWindow = new BejelentkezettPage();
+                //mainWindow.Content = new BejelentkezettPage();
+                BejelentkezettPage loggedInPage = new BejelentkezettPage();
+                NavigationService.Navigate(loggedInPage);
             }
             else
             {
