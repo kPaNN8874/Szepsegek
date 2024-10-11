@@ -25,6 +25,9 @@ namespace Szepsegek.Pages
             InitializeComponent();
         }
 
-      
+        private void Foglalas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
