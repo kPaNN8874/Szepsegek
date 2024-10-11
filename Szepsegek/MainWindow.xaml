@@ -26,9 +26,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <!-- Top Bar -->
-
-            <!-- Cards Section -->
+          
         </Grid>
     </Grid>
 </Window>

@@ -24,20 +24,19 @@ namespace Szepsegek.Pages
         {
             InitializeComponent();
         }
-
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
             string email = emailTextBox.Text;
             string password = passwordBox.Password;
 
-            // Basic sign-in logic placeholder
-            if (email == "test@example.com" && password == "password")
+            // Placeholder login logic
+            if (email == "admin" && password == "admin")
             {
-                MessageBox.Show("Sign in successful!");
-                // Navigate to the main window or dashboard
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                this.Close();
+                MessageBox.Show("Login successful!");
+                //BejelentkezettPage mainWindow = new BejelentkezettPage();
+                //mainWindow.Content = new BejelentkezettPage();
+                BejelentkezettPage loggedInPage = new BejelentkezettPage();
+                NavigationService.Navigate(loggedInPage);
             }
             else
             {
