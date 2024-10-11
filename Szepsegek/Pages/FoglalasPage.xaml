@@ -30,19 +30,16 @@
                 <!-- Employee List -->
                 <StackPanel Width="200" Margin="0,0,20,0">
                     <TextBlock Text="Dolgozók" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" />
-                    <ListBox>
-                        <ListBoxItem Content="Dolgozó 1 - Szolgáltatás1" />
-                        <ListBoxItem Content="Dolgozó 2 - Szolgáltatás2" />
-                        <ListBoxItem Content="Dolgozó 3 - Szolgáltatás3" />
+                    <ListBox x:Name="DolgozoLb">
                     </ListBox>
                 </StackPanel>
 
                 <!-- Date Picker and Time Picker -->
                 <StackPanel Width="400" Margin="0,0,0,0">
                     <TextBlock Text="Dátum" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
-                    <DatePicker SelectedDate="2023-08-17" Width="268" />
+                    <DatePicker x:Name="DatePickerSelectedDate" SelectedDate="2024-07-15"  Width="268" SelectedDateChanged="DatePickerSelectedDate_SelectedDateChanged" />
 
-                    <TextBlock Text="Időpont" FontSize="20" FontWeight="Bold" Margin="0,20,0,10"/>
+                    <TextBlock x:Name="TextBlockSelectedDate" Text="Időpont" FontSize="20" FontWeight="Bold" Margin="0,20,0,10"/>
                     <ComboBox Width="100">
                         <ComboBoxItem Content="08:00" />
                         <ComboBoxItem Content="09:00" />

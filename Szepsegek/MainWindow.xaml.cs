@@ -31,16 +31,7 @@ namespace Szepsegek
             this.DataContext = _dataService;
             InitializeComponent();
         }
-        private List<Szolgaltatas> Szolgaltatas()
-        {
-            return [
-                new Szolgaltatas(1,"Fodrasz",60,5000),
-                new Szolgaltatas (2, "Manikűr", 60, 7000),
-                new Szolgaltatas (3, "Pedikűr", 60, 6000)
-                ];
-        }
-
-        private List<Dolgozo> Dolgozo()
+       private List<Dolgozo> Dolgozo()
         {
             return [
                 new Dolgozo(1,"Asd", "Ibolya", 2, "36704562387", "asd.Ibolyka@gmail.com")
